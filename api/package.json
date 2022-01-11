@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "franco <francocobrunoc@gmail.com>",
+  "scripts": {
+    "init": "sls",
+    "deploy": "sls deploy",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@everestate/serverless-router": "^0.6.0",
+    "@everestate/serverless-router-aws": "^0.3.0",
+    "aws-lambda-response-builder": "^1.0.15",
+    "aws-sdk": "^2.1046.0",
+    "serverless": "^2.68.0",
+    "serverless-bundle": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "serverless-deployment-bucket": "^1.5.1",
+    "serverless-offline": "^8.3.1"
+  }
+}

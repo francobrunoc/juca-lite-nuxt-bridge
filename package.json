@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "pnpm i && (cd web && pnpm i) && (cd api && pnpm i)",
+    "web:init": "(cd web && pnpm run amplify:init && pnpm run amplify:hosting && pnpm run amplify:publish)",
+    "dev": "(cd web && pnpm run dev)",
+    "DEV:api:deploy": "(cd api && STAGE=dev sls deploy)",
+    "DEV:web:deploy": "(cd web && pnpm run amplify:publish)",
+    "PROD:api:deploy": "(cd api && STAGE=prod sls deploy)",
+    "PROD:web:deploy": "(cd web && pnpm run build-prod && STAGE=prod NO_CONFIRM=true sls client deploy)"
+  }
+}
